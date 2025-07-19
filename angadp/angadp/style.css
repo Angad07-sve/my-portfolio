@@ -1,0 +1,124 @@
+body {
+  background: #181a1b;
+  color: #f5f6fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem 1rem;
+  background: #232526;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #7ed6df;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #b2bec3;
+}
+.projects {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+}
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #00b894;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.project-card {
+  background: #222f3e;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  padding: 1.5rem;
+  width: 270px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+.project-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #81ecec;
+}
+.project-card p {
+  color: #b2bec3;
+  margin-bottom: 1rem;
+}
+.project-card a {
+  color: #00cec9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.project-card a:hover {
+  color: #0984e3;
+}
+.contact {
+  background: #232526;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.contact h2 {
+  color: #00b894;
+}
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #181a1b;
+  color: #636e72;
+  font-size: 0.95rem;
+}
+/* Animations */
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s forwards;
+}
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #232526;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  background: #232526;
+} 
